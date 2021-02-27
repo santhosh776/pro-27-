@@ -6,8 +6,8 @@ class Bob {
           'friction':0.5,
           'density':1.2
       }
-      this.body = Bodies.circle(x, y,5, options);
-      this.radius = 5;
+      this.body = Bodies.circle(x, y,80, options);
+      this.radius = 80;
       
       
       World.add(world, this.body);
@@ -18,8 +18,8 @@ class Bob {
       push();
       translate(pos.x, pos.y);
       rotate(angle);
-      rectMode(CENTER);
-      rect(0, 0, this.width, this.height);
+      ellipseMode(CENTER);
+      ellipse(0, 0, this.radius);
       pop();
     }
   };
